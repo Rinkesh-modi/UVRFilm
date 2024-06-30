@@ -2,7 +2,7 @@ import React from "react";
 
 function Header() {
   return (
-    <header className=" fixed w-full top-0 grid sm:grid-cols-12 gap-6 py-5 px-20 bg-transparent text-white">
+    <header className="z-40 fixed w-full top-0 grid sm:grid-cols-12 gap-6 py-5 px-20 bg-transparent text-white">
       <div className="sm:col-span-3">
         {/* <img src="logo.png" alt="Logo" className="h-10" /> */}
         <p className="text-xl md:text-2xl leading-snug font-bold font-poppins">
@@ -29,7 +29,7 @@ function Header() {
         </ul>
       </div>
       <div className="sm:col-span-2 py-2">
-        <div class="hidden lg:flex items-center gap-5">
+        <div class="lg:flex items-center gap-5">
           <a href="https://www.facebook.com">
             <div class="text-base text-white duration-300 ease-linear transition-all hover:text-rose">
               <svg

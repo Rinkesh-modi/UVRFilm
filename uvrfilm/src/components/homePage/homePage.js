@@ -3,6 +3,7 @@ import VideoBg from "../../assets/videos/heroVideo.mp4";
 import serviceImg from "../../assets/images/img.png";
 import serimg from "../../assets/images/ser-img.jpg";
 import t1 from "../../assets/images/t1-modified.png";
+import TestimonialCard from "../testimonialcard/TestimonialCard";
 
 function HomePage() {
   return (
@@ -167,7 +168,7 @@ function HomePage() {
       </div>
       <div className="testimonialSection w-full p-5">
         <div className="w-full h-auto rounded-xl border-dashed border-grey border-2 p-5">
-          <div className="border-4 w-full h-fit rounded-lg bg-gray-50 p-5 pt-20 text-center">
+          <div className="border-4 w-full h-fit rounded-lg bg-gray-50 px-5 py-20 text-center">
             <div className="flex flex-col justify-items-center items-center ">
               <p className="testimonial border-2 w-fit h-fit p-1 px-10 rounded-full bg-white border-gray-300">
                 Testimonials
@@ -182,51 +183,8 @@ function HomePage() {
                 a plan for you.
               </h2>
             </div>
-            <div className="w-10/12 mx-auto flex justify-evenly mt-12">
-              <div className="">
-                <button className="t-button border-2 w-fit h-fit p-2 px-10 rounded-full bg-gray-200 hover:bg-gray-300 hover:border-gray-400 border-gray-300  duration-300 transition-all ease-linear m-5 mx-3 flex">
-                  <div className="testimonial-img t-25y">
-                    <img src={t1} alt="" />
-                  </div>
-                  <div className="py-2 w-fit t-10y text-left">
-                    <h1 className="text-lg font-bold">Ben Tenison</h1>
-                    <h2 className="text-sm text-cyan font-bold">Youtuber</h2>
-                  </div>
-                </button>
-              </div>
-              <div className="">
-              <button className="t-button border-2 w-fit h-fit p-2 px-10 rounded-full bg-gray-200 hover:bg-gray-300 hover:border-gray-400 border-gray-300  duration-300 transition-all ease-linear m-5 mx-3 flex">
-              <div className="testimonial-img t-25y">
-                    <img src={t1} alt="" />
-                  </div>
-                  <div className="py-2 w-fit t-10y text-left">
-                    <h1 className="text-lg font-bold">Max Tenison</h1>
-                    <h2 className="text-sm text-cyan font-bold">Youtuber</h2>
-                  </div>
-                </button>
-              </div>
-              <div className="">
-              <button className="t-button border-2 w-fit h-fit p-2 px-10 rounded-full bg-gray-200 hover:bg-gray-300 hover:border-gray-400 border-gray-300  duration-300 transition-all ease-linear m-5 mx-3 flex">
-              <div className="testimonial-img t-25y">
-                    <img src={t1} alt="" />
-                  </div>
-                  <div className="py-2 w-fit t-10y text-left">
-                    <h1 className="text-lg font-bold">Gwen Tenison</h1>
-                    <h2 className="text-sm text-cyan font-bold">Youtuber</h2>
-                  </div>
-                </button>
-              </div>
-              <div className="">
-              <button className="t-button border-2 w-fit h-fit p-2 px-10 rounded-full bg-gray-200 hover:bg-gray-300 hover:border-gray-400 border-gray-300  duration-300 transition-all ease-linear m-5 mx-3 flex">
-              <div className="testimonial-img t-25y">
-                    <img src={t1} alt="" />
-                  </div>
-                  <div className="py-2 w-fit t-10y text-left">
-                    <h1 className="text-lg font-bold">Kevin Eleven</h1>
-                    <h2 className="text-sm text-cyan font-bold">Youtuber</h2>
-                  </div>
-                </button>
-              </div>
+            <div className="">
+              <TestimonialCard />
             </div>
           </div>
         </div>
